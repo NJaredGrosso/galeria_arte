@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#head{
+    background-color: rgb(221, 210, 163);
+    height: 100px;
+    margin: 0%;
+    border: 7px;
+    border-color: black;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    display: flex;   
+    flex-flow: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.head__nav{
+    height: 75%;
+    width: 75%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.head__nav__button{
+    font-family: 'Water Brush', cursive;
+    font-weight: bold;
+    color: rgb(32, 30, 23);
+}
+
+#head__logo{
+    height: 50px;
+    width: 150px;
+}
+
+#main{
+    background-color: rgb(253, 240, 186 );
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60vh 40vh;
+    justify-items: center;
+}
+
+#carrusel{
+    height: 550px;
+    width: 1100px;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#carrusel__caja{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.imagen{
+    height: 400px;
+    width: 400px;
+    box-sizing: border-box;
+}
+
+.text{
+    width: 600px;
+    margin: 15px;
+    box-sizing: border-box;
+}
+
+#galery{
+    width: 100%;
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.galery__div{
+    width: 350px;
+    display: block;
+    box-sizing: border-box;
+}
+
+#footer{
+    background-color: rgb(32, 30, 23 );
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_img{
+    width: 150px;
+    height: 50px;
+    margin: 3px;
+    box-sizing: border-box;
+}
+
+#footer__text{
+    width: 80%;    
+    display: block;
+    margin: 10px;
+}
+
+#galeria{
+    background-color: rgb(253, 240, 186 );
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-areas:
+        "buscador buscador buscador buscador buscador"
+        "fotouno fotodos fototres foto4 foto5";
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: 30% auto;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    justify-items: center;
+}
+
+#galeria__buscador{
+    grid-area: buscador;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#galeria__fotos1{
+    grid-area: fotouno;
+}
+#galeria__fotos2{
+    grid-area: fotodos;
+}
+#galeria__fotos3{
+    grid-area: fototres;
+}
+#galeria__fotos4{
+    grid-area: foto4;
+}
+#galeria__fotos5{
+    grid-area: foto5;
+}
+
+.photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#masInfo{
+    height: 85vh;
+    width: 100%;
+    background-color: rgb(253, 240, 186 );
+    display: grid;
+    grid-template-areas: 
+    "data iframes iframes"
+    "link1 link2 link3";
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 60% auto;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#masInfo__data{
+    grid-area: data;
+}
+
+#masInfo__iframes{
+    grid-area: iframes;
+    display: flex;
+    flex-direction: row;
+}
+
+#masInfo__link1{
+    grid-area: link1;
+}
+#masInfo__link2{
+    grid-area: link2;
+}
+#masInfo__link3{
+    grid-area: link3;
+}
+
+.imglink{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#registro{
+    background-color: rgb(253, 240, 186 );
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#registro__formulario{  
+    height: 50vh;
+    width: 100%;
+    margin-top: 30%;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: rgb(206, 194, 149);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 5%;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.formu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ayuda{
+    background-color: rgb(253, 240, 186 );
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "preg1 preg2 preg3"
+    "preg4 preg5 preg6"
+    "contacto contacto contacto";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 10% 30% 30% 10%;
+    justify-items: center;
+    align-items: center;
+}
+
+#ayuda__title{
+    grid-area: titulo;
+}
+#ayuda__pregunta1{
+    grid-area: preg1;
+}
+#ayuda__pregunta2{
+    grid-area: preg2;
+}
+#ayuda__pregunta3{
+    grid-area: preg3;
+}
+#ayuda__pregunta4{
+    grid-area: preg4;
+}
+#ayuda__pregunta5{
+    grid-area: preg5;
+}
+#ayuda__pregunta6{
+    grid-area: preg6;
+}
+#ayuda__contacto{
+    grid-area: contacto;
+}
+
+.pregunta{
+    margin: 15px;
+    border: 2px solid black;
+    padding: 5%;
+    background-color: rgb(218, 206, 159);
+}
+
+@media screen and (max-width: 1500px) {
+    #galeria{
+        height: 100%;
+        grid-template-areas: 
+        "buscador buscador"
+        "fotouno fotodos"
+        "fototres foto4"
+        "foto5 foto5";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% auto;
+    }
+
+    #masInfo__data{
+        height: 60%;
+        overflow-y: scroll;
+    }
+    #masInfo__iframes{
+        overflow: auto;
+    }
+
+    #masInfo__link1{
+        overflow: hidden;
+    }
+    #masInfo__link2{
+        overflow: hidden;
+    }
+    #masInfo__link3{
+        overflow: hidden;
+    }
+
+    #ayuda{
+        height: auto;
+        grid-template-areas: 
+        "titulo titulo"
+        "preg1 preg2"
+        "preg3 preg4"
+        "preg5 preg6"
+        "contacto contacto";
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 3fr 3fr 3fr 1fr;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    #galeria{
+        height: 100%;
+        grid-template-areas:
+            "buscador"
+            "fotouno"
+            "fotodos"
+            "fototres"
+            "foto4"
+            "foto5";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-row-gap: 20px;
+        grid-column-gap: 15px;
+    }
+
+    #masInfo{
+        overflow-y: auto;
+        grid-template-areas: 
+        "data data data"
+        "iframes iframes iframes"
+        "link1 link2 link3";
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: 60% 60% 60%;
+    }
+
+    #ayuda{
+        height: auto;
+        grid-template-areas: 
+        "titulo"
+        "preg1"
+        "preg2"
+        "preg3"
+        "preg4"
+        "preg5"
+        "preg6"
+        "contacto";
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(8, 1fr);
+    }
+}
+
