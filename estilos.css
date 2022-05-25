@@ -81,10 +81,26 @@
     justify-content: space-evenly;
 }
 
+.foto{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minimax(
+            150px,
+            1fr
+        )
+    );
+    gap: 16px;
+}
+
 .galery__div{
     width: 350px;
     display: block;
     box-sizing: border-box;
+}
+
+.galery__div:hover{
+    transform: scale(1.2,1.2);   
 }
 
 #footer{
@@ -149,6 +165,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(250, 233, 164);
+    padding: 5px;
+}
+
+.photo:hover{
+    transform: scale(1.2,1.2);
+    
 }
 
 #masInfo{
@@ -191,6 +214,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.imglink:hover{
+    transform: scale(1.2,1.2);   
 }
 
 #registro{
