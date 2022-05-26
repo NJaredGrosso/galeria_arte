@@ -20,7 +20,8 @@
 
 #main{
     width: 100%;
-    height: fit-content;
+    height: 100%;
+    display: flex;
 }
 
 #opciones{
@@ -28,11 +29,18 @@
 }
 
 #carousel{
-    height: 100%;
+    height: 60vh;
     width: 100%;
     overflow-y: hidden;
 }
 
+.imagenes__carrusel{
+    height: fit-content;
+}
+
+.carousel-inner{
+    height:100%;
+}
 
 .head__nav{
     background-color: rgb(221, 210, 163);
@@ -55,12 +63,18 @@
 }
 
 #main{
-    height: max-content;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .foto__carrusel{
-    width:fit-content;
     overflow: hidden;
+    display: flex;
+    align-content: center;
 }
 
 .galery__div:hover{
@@ -71,6 +85,7 @@
     background-color: rgb(32, 30, 23 );
     padding: 10px;
     display: flex;
+    bottom: 0;
     align-items: center;
     justify-content: center;
 }
