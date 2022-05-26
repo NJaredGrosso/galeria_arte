@@ -18,6 +18,100 @@
     align-items: center;
 }
 
+#opciones{
+    background-color: rgb(221, 210, 163);
+}
+
+.foto_carrusel{
+    box-sizing: border-box;
+}
+
+.head__nav{
+    background-color: rgb(221, 210, 163);
+}
+
+.head__nav__button{
+    font-family: 'Water Brush', cursive;
+    font-weight: bold;
+    color: rgb(32, 30, 23);
+}
+
+#head__logo{
+    height: 50px;
+    width: 150px;
+}
+
+#body{
+    background-color: rgb(245, 232, 175);
+}
+
+#main{
+    height: 100%;
+}
+
+.carrusel{
+    box-sizing: content-box;
+    
+}
+
+.foto__carrusel{
+    width:fit-content;
+    overflow: hidden;
+}
+
+.galery__div:hover{
+    transform: scale(1.2,1.2);   
+}
+
+#footer{
+    background-color: rgb(32, 30, 23 );
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_img{
+    width: 150px;
+    height: 50px;
+    margin: 3px;
+    box-sizing: border-box;
+}
+
+#footer__text{
+    width: 80%;    
+    display: block;
+    margin: 10px;
+}
+
+#registro{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario{
+    border: 5px solid black;
+    padding: 4%;
+}
+
+#head{
+    background-color: rgb(221, 210, 163);
+    height: 100px;
+    margin: 0%;
+    border: 7px;
+    border-color: black;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    display: flex;   
+    flex-flow: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .head__nav{
     height: 75%;
     width: 75%;
@@ -79,18 +173,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-
-.foto{
-    display: grid;
-    grid-template-columns: repeat(
-        auto-fit,
-        minimax(
-            150px,
-            1fr
-        )
-    );
-    gap: 16px;
 }
 
 .galery__div{
