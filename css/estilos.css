@@ -3,488 +3,328 @@
     padding: 0;
 }
 
-#head{
-    background-color: rgb(221, 210, 163);
-    height: 100px;
-    margin: 0%;
-    border: 7px;
-    border-color: black;
-    z-index: 10;
-    position: sticky;
-    top: 0;
-    display: flex;   
-    flex-flow: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#main{
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-
-#opciones{
-    background-color: rgb(221, 210, 163);
-}
-
-#carousel{
-    height: 60vh;
-    width: 100%;
-    overflow-y: hidden;
-}
-
-.imagenes__carrusel{
-    height: fit-content;
-}
-
-.carousel-inner{
-    height:100%;
-}
-
-.head__nav{
-    background-color: rgb(221, 210, 163);
-}
-
-.head__nav__button{
-    font-family: 'Water Brush', cursive;
-    font-weight: bold;
-    color: rgb(32, 30, 23);
-}
-
-#head__logo{
-    height: 50px;
-    width: 150px;
+.w40{
+    width: 40%;
 }
 
 #body{
-    background-color: rgb(245, 232, 175);
-    height: max-content;
-}
-
-#main{
-    height: 100%;
     width: 100%;
-    overflow: auto;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.foto__carrusel{
-    overflow: hidden;
-    display: flex;
-    align-content: center;
-}
-
-.galery__div:hover{
-    transform: scale(1.2,1.2);   
-}
-
-#footer{
-    background-color: rgb(32, 30, 23 );
-    padding: 10px;
-    display: flex;
-    bottom: 0;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer_img{
-    width: 150px;
-    height: 50px;
-    margin: 3px;
-    box-sizing: border-box;
-}
-
-#footer__text{
-    width: 80%;    
-    display: block;
-    margin: 10px;
-}
-
-#registro{
-    height: 90vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#formulario{
-    border: 5px solid black;
-    padding: 4%;
+    height: auto;
+    background-color: rgb(226, 191, 147);
 }
 
 #head{
-    background-color: rgb(221, 210, 163);
-    height: 100px;
-    margin: 0%;
-    border: 7px;
-    border-color: black;
-    z-index: 10;
-    position: sticky;
-    top: 0;
-    display: flex;   
-    flex-flow: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.head__nav{
-    height: 75%;
-    width: 75%;
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.head__nav__button{
-    font-family: 'Water Brush', cursive;
-    font-weight: bold;
-    color: rgb(32, 30, 23);
-}
-
-#head__logo{
-    height: 50px;
-    width: 150px;
-}
-
-#main{
-    background-color: rgb(253, 240, 186 );
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 60vh 40vh;
-    justify-items: center;
-}
-
-#carrusel{
-    height: 550px;
-    width: 1100px;
-    overflow: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#carrusel__caja{
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-}
-
-.imagen{
-    height: 400px;
-    width: 400px;
-    box-sizing: border-box;
-}
-
-.text{
-    width: 600px;
-    margin: 15px;
-    box-sizing: border-box;
-}
-
-#galery{
     width: 100%;
-    margin: 3%;
+    height: 10vh;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    background-color: rgb(194, 154, 106);
+    border-bottom: 2px solid black;
+}
+
+.logo{
+    height: 50px;
+    width: 100px;
+}
+
+#opciones__ul{
+    width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
+    background-color: rgb(194, 154, 106);    
 }
 
-.galery__div{
-    width: 350px;
-    display: block;
-    box-sizing: border-box;
-}
-
-.galery__div:hover{
-    transform: scale(1.2,1.2);   
+.nav-link{
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+    margin-left: 10px;
 }
 
 #footer{
-    background-color: rgb(32, 30, 23 );
-    padding: 10px;
+    width: 99%;
+    height: 100%;
+    padding: 0.5%;
+    background-color: rgb(94, 73, 48);
+    box-sizing: content-box;
+    position: relative;
+    bottom: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.footer_img{
-    width: 150px;
-    height: 50px;
-    margin: 3px;
-    box-sizing: border-box;
+    align-items: center;
 }
 
 #footer__text{
-    width: 80%;    
-    display: block;
-    margin: 10px;
+    width: 90%;
+    height: 100%;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.fondo_negro{
+    background-color: rgba(0, 0, 0, 0.548);
+}
+
+.sizes{
+    height: 90%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+}
+
+#carousel{
+    width: 100%;
+    height: 60%;
+}
+
+.foto_carrusel{
+    height: 500px;
+    width: 2000px;
+}
+
+.galery__div{
+    height: 350px;
+    width: 100%;
+    margin: 3%;
+    padding: 10px;
+    background-color: rgb(194, 154, 106);
+    border: 1px solid rgb(100, 81, 57);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.galery__div:hover{
+    transform: scale(1.2,1.2);
 }
 
 #galeria{
-    background-color: rgb(253, 240, 186 );
-    width: 100%;
-    height: 90vh;
-    display: grid;
-    grid-template-areas:
-        "buscador buscador buscador buscador buscador"
-        "fotouno fotodos fototres foto4 foto5";
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: 30% auto;
-    grid-column-gap: 2px;
-    grid-row-gap: 2px;
-    justify-items: center;
+    width: 99%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #galeria__buscador{
-    grid-area: buscador;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buscador{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#galeria__fotos1{
-    grid-area: fotouno;
-}
-#galeria__fotos2{
-    grid-area: fotodos;
-}
-#galeria__fotos3{
-    grid-area: fototres;
-}
-#galeria__fotos4{
-    grid-area: foto4;
-}
-#galeria__fotos5{
-    grid-area: foto5;
+
+#album__fotos{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 16px;
 }
 
 .photo{
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-color: rgb(194, 154, 106);
+    border: 1px solid rgb(100, 81, 57);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: rgb(250, 233, 164);
-    padding: 5px;
+
 }
 
-.photo:hover{
-    transform: scale(1.2,1.2);
-    
+.img300{
+    width: 100%;
 }
 
 #masInfo{
-    height: 85vh;
     width: 100%;
-    background-color: rgb(253, 240, 186 );
+    height: 100%;
+    padding: 4%;
     display: grid;
-    grid-template-areas: 
-    "data iframes iframes"
-    "link1 link2 link3";
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 60% auto;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-#masInfo__data{
-    grid-area: data;
+    grid-template-columns: repeat(3,auto);
+    grid-auto-rows: 1fr;
 }
 
 #masInfo__iframes{
-    grid-area: iframes;
+    grid-column-start: span 2;
     display: flex;
-    flex-direction: row;
-}
-
-#masInfo__link1{
-    grid-area: link1;
-}
-#masInfo__link2{
-    grid-area: link2;
-}
-#masInfo__link3{
-    grid-area: link3;
 }
 
 .imglink{
+    margin: 3%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.imglink:hover{
-    transform: scale(1.2,1.2);   
 }
 
 #registro{
-    background-color: rgb(253, 240, 186 );
-    height: 100vh;
     width: 100%;
+    height: 90vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
 
-#registro__formulario{  
-    height: 50vh;
-    width: 100%;
-    margin-top: 30%;
+#formulario{
+    width: 50;
+    margin: 5%;
+    padding: 16px;
     border: 2px solid black;
-    padding: 10px;
-    background-color: rgb(206, 194, 149);
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(6, 1fr);
-    grid-row-gap: 5%;
-    align-items: center;
-    justify-items: center;
-
-}
-
-.formu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: rgba(179, 144, 101, 0.815);
 }
 
 #ayuda{
-    background-color: rgb(253, 240, 186 );
-    height: 100vh;
     width: 100%;
+    height: 90%;
+    padding: 20px;
     display: grid;
-    grid-template-areas: 
-    "titulo titulo titulo"
-    "preg1 preg2 preg3"
-    "preg4 preg5 preg6"
-    "contacto contacto contacto";
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 10% 30% 30% 10%;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: 30%,auto;
+    gap: 16px;
 }
 
 #ayuda__title{
-    grid-area: titulo;
+    grid-column-start: span 3;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
 }
-#ayuda__pregunta1{
-    grid-area: preg1;
-}
-#ayuda__pregunta2{
-    grid-area: preg2;
-}
-#ayuda__pregunta3{
-    grid-area: preg3;
-}
-#ayuda__pregunta4{
-    grid-area: preg4;
-}
-#ayuda__pregunta5{
-    grid-area: preg5;
-}
-#ayuda__pregunta6{
-    grid-area: preg6;
-}
+
 #ayuda__contacto{
-    grid-area: contacto;
+    grid-column-start: span 3; 
+    margin: 3%;
+    display: flex;
+    justify-content: center;
 }
 
 .pregunta{
-    margin: 15px;
-    border: 2px solid black;
-    padding: 5%;
-    background-color: rgb(218, 206, 159);
+    height: 100%;
+    width: 100%;
+    border: 2px solid rgb(100, 81, 57);
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.116);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
-@media screen and (max-width: 1500px) {
-    #galeria{
-        height: 100%;
-        grid-template-areas: 
-        "buscador buscador"
-        "fotouno fotodos"
-        "fototres foto4"
-        "foto5 foto5";
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 20% auto;
-    }
-
-    #masInfo__data{
-        height: 60%;
-        overflow-y: scroll;
-    }
-    #masInfo__iframes{
-        overflow: auto;
-    }
-
-    #masInfo__link1{
-        overflow: hidden;
-    }
-    #masInfo__link2{
-        overflow: hidden;
-    }
-    #masInfo__link3{
-        overflow: hidden;
-    }
-
-    #ayuda{
-        height: auto;
-        grid-template-areas: 
-        "titulo titulo"
-        "preg1 preg2"
-        "preg3 preg4"
-        "preg5 preg6"
-        "contacto contacto";
-        grid-template-columns: auto auto;
-        grid-template-rows: 1fr 3fr 3fr 3fr 1fr;
-    }
-}
-
-
-
-@media screen and (max-width: 600px) {
-    #galeria{
-        height: 100%;
-        grid-template-areas:
-            "buscador"
-            "fotouno"
-            "fotodos"
-            "fototres"
-            "foto4"
-            "foto5";
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
-        grid-row-gap: 20px;
-        grid-column-gap: 15px;
+@media screen and (max-width: 540px) {
+    #opciones__ul{
+        border: 1px solid black;
     }
 
     #masInfo{
-        overflow-y: auto;
-        grid-template-areas: 
-        "data data data"
-        "iframes iframes iframes"
-        "link1 link2 link3";
-        grid-template-columns: repeat(3, 30%);
-        grid-template-rows: 60% 60% 60%;
-    }
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: 70%, auto;
+    } 
 
     #ayuda{
-        height: auto;
-        grid-template-areas: 
-        "titulo"
-        "preg1"
-        "preg2"
-        "preg3"
-        "preg4"
-        "preg5"
-        "preg6"
-        "contacto";
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    #ayuda__title{
+        grid-column-start: span 1;
+    }
+    
+    #ayuda__contacto{
+        grid-column-start: span 1; 
     }
 }
 
+@media screen and (min-width: 540px){
+    
+    #album__fotos{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 720px){
+
+    #masInfo{
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: 70%, auto;
+    } 
+
+    #ayuda{
+        grid-template-columns: repeat(2,auto);
+    }
+
+    #ayuda__title{
+        grid-column-start: span 2;
+    }
+    
+    #ayuda__contacto{
+        grid-column-start: span 2; 
+    }
+}
+
+@media screen and (min-width: 720px){
+    
+    #album__fotos{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 960px){
+
+    #masInfo{
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 70%, auto;
+    } 
+
+    #ayuda{
+        grid-template-columns: repeat(2,auto);
+    }
+
+    #ayuda__title{
+        grid-column-start: span 2;
+    }
+    
+    #ayuda__contacto{
+        grid-column-start: span 2; 
+    }
+}
+
+@media screen and (min-width: 960px){
+    
+    #album__fotos{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (max-width: 1140px){    
+    #masInfo{
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 70%, auto;
+    } 
+
+    #ayuda{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #ayuda__title{
+        grid-column-start: span 2;
+    }
+    
+    #ayuda__contacto{
+        grid-column-start: span 2; 
+    }
+}
+
+@media screen and (min-width: 1140px){
+    
+    #album__fotos{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
