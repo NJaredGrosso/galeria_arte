@@ -153,11 +153,11 @@
     padding: 4%;
     display: grid;
     grid-template-columns: repeat(3,auto);
-    grid-auto-rows: 1fr;
 }
 
 #masInfo__iframes{
     grid-column-start: span 2;
+    margin: 16px;
     display: flex;
 }
 
