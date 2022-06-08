@@ -22,6 +22,7 @@
 
 #opciones__ul {
   width: 100%;
+  border: 2px solid black;
   background-color: #c29a6a;
   display: flex;
   justify-content: space-evenly;
@@ -56,11 +57,14 @@
   width: 2000px;
   height: 500px; }
 
+.fondo_negro {
+  background-color: rgba(0, 0, 0, 0.548); }
+
 #index__galeria {
   width: 99%;
   height: 50%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
   padding: 4%; }
 
@@ -100,7 +104,7 @@
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
   padding: 10px; }
 
@@ -148,10 +152,10 @@
 #masInfo {
   height: 100%;
   width: 100%;
-  padding: 10px;
+  padding: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px; }
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 45px; }
 
 #info {
   height: 100%;
@@ -160,67 +164,93 @@
 #video {
   height: 100%;
   width: 100%; }
+  #video iframe {
+    height: 100%;
+    width: 100%; }
 
-#mapa {
+#mapa iframe {
   height: 100%;
   width: 100%; }
 
 #link1 {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
 
 #link2 {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
 
 #link3 {
   height: 100%;
-  width: 100%; }
-
-.fondo_negro {
-  background-color: rgba(0, 0, 0, 0.548); }
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
 
 #registro {
+  height: 100%;
   width: 100%;
-  height: 90vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  padding-top: 35px;
+  padding-bottom: 35px; }
 
 #formulario {
   width: 50;
   margin: 5%;
   padding: 16px;
   border: 2px solid black;
-  background-color: rgba(179, 144, 101, 0.815); }
+  background-color: #c29a6a; }
 
 #ayuda {
+  height: 100%;
   width: 100%;
-  height: 90%;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: 30%,auto;
-  gap: 16px; }
-
-#ayuda__title {
-  grid-column-start: span 3;
-  margin: 5%;
+  padding: 10px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center; }
 
-#ayuda__contacto {
-  grid-column-start: span 3;
-  margin: 3%;
+#preguntas {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  margin: 35px; }
+
+#ayuda__title {
+  margin-top: 20px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center; }
 
 .pregunta {
   height: 100%;
   width: 100%;
-  border: 2px solid #645139;
-  padding: 16px;
-  background-color: rgba(0, 0, 0, 0.116);
+  border: 2px solid black;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  background-color: #c29a6a; }
+
+#ayuda__contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+@media screen and (min-width: 768px) {
+  #opciones__ul {
+    border: 0; }
+  #masInfo {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); } }

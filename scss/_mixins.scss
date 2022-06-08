@@ -4,6 +4,11 @@
     width: 100%;
 }
 
+@mixin fraccion {
+    height: 1fr;
+    width: 1fr;
+}
+
 @mixin flexcol-centrado{
     display: flex;
     flex-direction: column;
@@ -50,7 +55,7 @@
 @mixin grid-responsive{
     display: grid;
     grid-template-columns: repeat(auto-fit,
-    minmax(300px,1fr));
+    minmax(400px,1fr));
     gap: 20px;
 }
 
