@@ -10,7 +10,7 @@
 
 #head{
     width: 100%;
-    height: 10vh;
+    height: 80px;
     @include sticky-top;
     background-color: $c_header;
     border-bottom: $bor_negro;
@@ -152,10 +152,7 @@
 #masInfo{
     @include sizes100;
     padding: $pad-normal*3;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,
-    minmax(400px,1fr));
-    gap: 45px;
+    @include grid-responsive;
 }
 
 #info{
@@ -240,7 +237,7 @@
     @include flexcol-centrado-v
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
     
     #opciones__ul{
         border: 0;
@@ -249,6 +246,7 @@
     #masInfo{
         grid-template-columns: repeat(auto-fit,
         minmax(450px,1fr));
+        gap: $pad-normal;
     }
 
 }
