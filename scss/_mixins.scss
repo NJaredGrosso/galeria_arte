@@ -55,7 +55,7 @@
 @mixin grid-responsive{
     display: grid;
     grid-template-columns: repeat(auto-fit,
-    minmax(300px,1fr));
+    minmax(250px,1fr));
     gap: 20px;
 }
 
