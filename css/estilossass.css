@@ -25,12 +25,16 @@
   border: 2px solid black;
   background-color: #c29a6a;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: right;
   padding-left: 10px; }
 
 .nav-link {
   font-family: "Courgette", cursive;
-  font-weight: bold; }
+  font-weight: bold;
+  width: max-content; }
+
+.nav-item {
+  margin-left: 2%; }
 
 #footer {
   height: 100%;

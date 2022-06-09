@@ -25,13 +25,19 @@
     width: 100%;
     border: $bor_negro;
     background-color: $c_header;
-    @include flex-space;
+    display: flex;
+    justify-content: right;
     padding-left: 10px;
 }
 
 .nav-link{
     font-family: $fuente_nav;
     font-weight: bold;
+    width: max-content;
+}
+
+.nav-item{
+    margin-left: 2%;
 }
 
 #footer{
