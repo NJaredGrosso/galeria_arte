@@ -77,7 +77,8 @@
     text-align: justify;
     overflow: hidden;
     &:hover{
-        height: fit-content;
+        height: 50%;
+        overflow: auto;
     }
 }
 
@@ -277,6 +278,8 @@
 
 #ayuda__title{
     @include flexcol-centrado;
+    font-family: $fuente_nav;
+    font-weight: bold;
 }
 
 .pregunta{
@@ -300,6 +303,10 @@
     }
     .fondo_negro{
         height: fit-content;
+        &:hover{
+            height: fit-content;
+            overflow: auto;
+        }
     }
 
     #masInfo{

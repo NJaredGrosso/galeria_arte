@@ -75,7 +75,8 @@
   text-align: justify;
   overflow: hidden; }
   .fondo_negro:hover {
-    height: fit-content; }
+    height: 50%;
+    overflow: auto; }
 
 .carousel-indicators {
   z-index: 9; }
@@ -281,7 +282,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  font-family: "Courgette", cursive;
+  font-weight: bold; }
 
 .pregunta {
   height: 100%;
@@ -305,6 +308,9 @@
     border: 0; }
   .fondo_negro {
     height: fit-content; }
+    .fondo_negro:hover {
+      height: fit-content;
+      overflow: auto; }
   #masInfo {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 15px; }
