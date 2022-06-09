@@ -65,8 +65,19 @@
   height: 500px; }
 
 .fondo_negro {
+  height: 52px;
+  padding: 15px;
   background-color: rgba(0, 0, 0, 0.548);
-  text-align: justify; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  overflow: hidden; }
+  .fondo_negro:hover {
+    height: fit-content; }
+
+.carousel-indicators {
+  z-index: 9; }
 
 #index__galeria {
   width: 99%;
@@ -139,7 +150,7 @@
     border-radius: 20px; }
   .photo div {
     width: 100%;
-    height: 100%;
+    height: fit-content;
     padding: 15px;
     border-radius: 20px;
     background-color: #c29a6a;
@@ -284,6 +295,8 @@
 @media screen and (min-width: 576px) {
   #opciones__ul {
     border: 0; }
+  .fondo_negro {
+    height: fit-content; }
   #masInfo {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 15px; }
