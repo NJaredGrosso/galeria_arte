@@ -59,6 +59,12 @@
     gap: 20px;
 }
 
+@mixin grid-resp-400 {
+    grid-template-columns: repeat(auto-fit,
+        minmax(400px,1fr));
+        gap: $pad-normal;
+}
+
 @mixin sticky-top {
     position: sticky;
     top: 0;

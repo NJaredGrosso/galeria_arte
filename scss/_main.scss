@@ -51,7 +51,7 @@
 
 #carousel{
     width: 100%;
-    height: 50%;
+    height: 40%;
 }
 
 .foto_carrusel{
@@ -74,9 +74,14 @@
     padding: $pad-normal;
     background-color: $c_card;
     border: $bor_card;
+    border-radius: $rad_bor;
     @include flexcol-centrado-v;
     &:hover{
         transform: scale(1.1,1.1);
+    }
+    img{
+        height: 100%;
+        border-radius: $rad_bor;
     }
 }
 
@@ -114,12 +119,12 @@
     padding: $pad-normal;
     background-color: $c_card;
     border: $bor_card;
-    border-radius: 20px;
+    border-radius: $rad_bor;
     overflow: hidden;
     img{
         @include sizes100;
         border: $bor_card;
-        border-radius: 20px;
+        border-radius: $rad_bor;
     }
     div{
         width: 100%;
@@ -192,12 +197,27 @@
     flex-direction: column;
 }
 
+.imglink{
+    transform: scale(0.8);
+    padding: $pad-normal;
+    background-color: $c_card;
+    border-radius: $rad_bor;
+    img{
+        border-radius: $rad_bor;
+    }
+}
+
 #registro{
     @include sizes100;
     @include flexcol-centrado;
     padding-top: 35px;
     padding-bottom: 35px;
 }
+
+#registro__cabecera{
+    @include sizes100;
+    @include flexcol-centrado-h
+}   
 
 #formulario{
     width: 50;
@@ -221,7 +241,6 @@
 }
 
 #ayuda__title{
-    margin-top: 20px;
     @include flexcol-centrado;
 }
 
@@ -234,7 +253,8 @@
 }
 
 #ayuda__contacto{
-    @include flexcol-centrado-v
+    @include flexcol-centrado-v;
+    margin: $pad-normal;
 }
 
 @media screen and (min-width: 576px) {
@@ -242,11 +262,25 @@
     #opciones__ul{
         border: 0;
     }
-
     #masInfo{
         grid-template-columns: repeat(auto-fit,
         minmax(450px,1fr));
         gap: $pad-normal;
     }
+    #album__fotos{
+        @include grid-resp-400;
+    }
+    #preguntas{
+        @include grid-resp-400;
+    }
+}
 
+@media screen and (min-width: 985px) and (max-width: 1445px){
+    #mapa{
+        grid-column-start: 2;
+    }
+    #link1{
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
 }
