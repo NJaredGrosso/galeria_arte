@@ -41,6 +41,7 @@
   width: 100%;
   padding: 15px;
   background-color: #5e4930;
+  border-top: 2px solid black;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -62,7 +63,7 @@
 
 .foto_carrusel {
   width: 100%;
-  height: 500px; }
+  height: 60vh; }
 
 .fondo_negro {
   height: 52px;
@@ -185,6 +186,10 @@
   height: 100%;
   width: 100%;
   text-align: justify; }
+  #info h1 {
+    font-family: "Courgette", cursive;
+    font-weight: bold;
+    text-align: left; }
 
 #video {
   height: 100%;
@@ -243,6 +248,9 @@
   flex-direction: column;
   align-items: center;
   text-align: justify; }
+  #registro__cabecera h4 {
+    font-family: "Courgette", cursive;
+    font-weight: bold; }
 
 #formulario {
   width: 50;

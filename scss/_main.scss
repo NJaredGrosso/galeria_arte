@@ -44,6 +44,7 @@
     @include sizes100;
     padding: $pad-normal;
     background-color: $c_footer;
+    border-top: $bor_negro;
     @include flexrow-centrado;
 }
 
@@ -65,7 +66,7 @@
 
 .foto_carrusel{
     width: 100%;
-    height: 500px;
+    height: 60vh;
 }
 
 .fondo_negro{
@@ -185,6 +186,11 @@
 #info{
     @include sizes100;
     text-align: justify;
+    h1{
+        font-family: $fuente_nav;
+        font-weight: bold;
+        text-align: left;
+    }
 }
 
 #video{
@@ -242,6 +248,10 @@
     padding: $pad-normal;
     @include flexcol-centrado-h;
     text-align: justify;
+    h4{
+        font-family: $fuente_nav;
+        font-weight: bold;
+    }
 }   
 
 #formulario{
