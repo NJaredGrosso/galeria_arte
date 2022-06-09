@@ -289,6 +289,9 @@
     @include flexcol-centrado-h;
     background-color: $c_card;
     text-align: justify;
+    h3{
+        text-align: center;
+    }
 }
 
 #ayuda__contacto{

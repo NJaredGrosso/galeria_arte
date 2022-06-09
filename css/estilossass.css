@@ -296,6 +296,8 @@
   align-items: center;
   background-color: #c29a6a;
   text-align: justify; }
+  .pregunta h3 {
+    text-align: center; }
 
 #ayuda__contacto {
   display: flex;
