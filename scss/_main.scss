@@ -62,6 +62,7 @@
 #carousel{
     width: 100%;
     height: 40%;
+    overflow: hidden;
 }
 
 .foto_carrusel{
@@ -70,20 +71,31 @@
 }
 
 .fondo_negro{
-    height: 52px;
+    height: 40%;
     padding: $pad-normal;
     background-color: rgba(0, 0, 0, 0.548);
     @include flexcol-centrado-h;
     text-align: justify;
+    z-index: 9;
     overflow: hidden;
+    transform: translateY(190px);
+    transition: transform .25s;
+    div{
+        @include flexcol-centrado-h;
+        height: fit-content;
+    }
     &:hover{
-        height: 50%;
-        overflow: auto;
+        height: fit-content;
+        transform: translateY(0);
+        transition: transform .25s;
     }
 }
+    
+
 
 .carousel-indicators{
     z-index: 9;
+    top: 15px;
 }
 
 #index__galeria{
@@ -131,11 +143,6 @@
     padding: $pad-normal;
 }
 
-.photo__desription{
-    opacity: 0;
-    transition: opacity .5s;
-}
-
 .photo{
     width: 100%;
     height: 400px;
@@ -154,6 +161,7 @@
         height: fit-content;
         padding: $pad-normal;
         border-radius: 20px;
+        border-top: $bor_card;
         background-color: $c_card;
         text-align: justify;
         position: relative;
@@ -163,18 +171,17 @@
         transition: transform .25s;
         &::before{
             @include sizes100;
-            content: '';
             position: absolute;
             top: -47px;
             right: -45px;
         }
+        h5{
+            font-family: $fuente_nav;
+            font-weight: bold;  
+        }
     }
     &:hover div{
         transform: translateY(0);
-    }
-    &:hover .photo__desription{
-        opacity: 1;
-        transition-delay: .25s;
     }
 }
 
@@ -228,12 +235,20 @@
 }
 
 .imglink{
+    @include flexcol-centrado-h;
+    height: fit-content;
     transform: scale(0.8);
     padding: $pad-normal;
     background-color: $c_card;
     border-radius: $rad_bor;
+    border: $bor_card;
     img{
+        width: 100%;
+        height: 320px;
         border-radius: $rad_bor;
+    }
+    a{
+        font-weight: bold;
     }
 }
 
@@ -306,9 +321,12 @@
     }
     .fondo_negro{
         height: fit-content;
+        transform: translateY(0);
+        div{
+            transform: translateY(0);
+        }
         &:hover{
             height: fit-content;
-            overflow: auto;
         }
     }
 
@@ -325,7 +343,7 @@
     }
 }
 
-@media screen and (min-width: 985px) and (max-width: 1445px){
+@media screen and (min-width: 985px) and (max-width: 1485px){
     #mapa{
         grid-column-start: 2;
     }
