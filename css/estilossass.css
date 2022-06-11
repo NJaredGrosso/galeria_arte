@@ -76,13 +76,14 @@
   text-align: justify;
   z-index: 9;
   overflow: hidden;
-  transform: translateY(190px);
+  transform: translateY(180px);
   transition: transform .25s; }
   .fondo_negro div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: fit-content; }
+    height: fit-content;
+    z-index: 9; }
   .fondo_negro:hover {
     height: fit-content;
     transform: translateY(0);

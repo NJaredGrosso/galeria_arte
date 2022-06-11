@@ -78,11 +78,12 @@
     text-align: justify;
     z-index: 9;
     overflow: hidden;
-    transform: translateY(190px);
+    transform: translateY(180px);
     transition: transform .25s;
     div{
         @include flexcol-centrado-h;
         height: fit-content;
+        z-index: 9;
     }
     &:hover{
         height: fit-content;
