@@ -71,32 +71,31 @@
 }
 
 .fondo_negro{
-    height: 40%;
+    height: 500px;
     padding: $pad-normal;
     background-color: rgba(0, 0, 0, 0.548);
     @include flexcol-centrado-h;
     text-align: justify;
     z-index: 9;
     overflow: hidden;
-    transform: translateY(180px);
+    position: absolute;
+    top: -450px;
     transition: transform .25s;
     div{
         @include flexcol-centrado-h;
-        height: fit-content;
+        padding: $pad-normal;
+        position: absolute;
+        bottom: 0;
         z-index: 9;
     }
     &:hover{
-        height: fit-content;
-        transform: translateY(0);
+        transform: translateY(230px);
         transition: transform .25s;
     }
 }
-    
-
 
 .carousel-indicators{
     z-index: 9;
-    top: 15px;
 }
 
 #index__galeria{
@@ -321,13 +320,18 @@
         border: 0;
     }
     .fondo_negro{
-        height: fit-content;
-        transform: translateY(0);
+        height: auto;
+        position: absolute;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0);
         div{
+            height: fit-content;
+            top: 0;
             transform: translateY(0);
+            background-color: rgba(0, 0, 0, 0.548);
         }
         &:hover{
-            height: fit-content;
+            transform: translateY(0);
         }
     }
 

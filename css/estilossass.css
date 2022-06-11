@@ -67,7 +67,7 @@
   height: 60vh; }
 
 .fondo_negro {
-  height: 40%;
+  height: 500px;
   padding: 15px;
   background-color: rgba(0, 0, 0, 0.548);
   display: flex;
@@ -76,22 +76,23 @@
   text-align: justify;
   z-index: 9;
   overflow: hidden;
-  transform: translateY(180px);
+  position: absolute;
+  top: -450px;
   transition: transform .25s; }
   .fondo_negro div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: fit-content;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
     z-index: 9; }
   .fondo_negro:hover {
-    height: fit-content;
-    transform: translateY(0);
+    transform: translateY(230px);
     transition: transform .25s; }
 
 .carousel-indicators {
-  z-index: 9;
-  top: 15px; }
+  z-index: 9; }
 
 #index__galeria {
   width: 99%;
@@ -326,12 +327,17 @@
   #opciones__ul {
     border: 0; }
   .fondo_negro {
-    height: fit-content;
-    transform: translateY(0); }
+    height: auto;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0); }
     .fondo_negro div {
-      transform: translateY(0); }
+      height: fit-content;
+      top: 0;
+      transform: translateY(0);
+      background-color: rgba(0, 0, 0, 0.548); }
     .fondo_negro:hover {
-      height: fit-content; }
+      transform: translateY(0); }
   #masInfo {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 15px; }
