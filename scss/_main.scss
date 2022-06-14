@@ -6,7 +6,7 @@
 #body{
     @include sizes100;
     background-color: map-get($colors, fondo);
-
+}
 #head{
     width: 100%;
     height: 80px;
@@ -317,6 +317,12 @@
 #ayuda__contacto{
     @include flexcol-centrado-v;
     margin: $pad-normal;
+    button{
+        a{
+            color: black;
+            font-weight: bold;
+        }
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -373,4 +379,3 @@
     grid-column-start: 2;
 }
 }                                                         
-}
