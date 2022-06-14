@@ -5,13 +5,13 @@
 
 #body{
     @include sizes100;
-    background-color: map-get($map: colors, $key: fondo);
+    background-color: map-get($colors, fondo);
 
 #head{
     width: 100%;
     height: 80px;
     @include sticky-top;
-    background-color: map-get($map: colors, $key: header);
+    background-color: map-get($colors, header);
     border-bottom: $bor_negro;
 }
 
@@ -23,7 +23,7 @@
 #opciones__ul{
     width: 100%;
     border: $bor_negro;
-    background-color: map-get($map: colors, $key: header);
+    background-color: map-get($colors, header);
     display: flex;
     justify-content: right;
     padding-left: 10px;
@@ -42,7 +42,7 @@
 #footer{
     @include sizes100;
     padding: $pad-normal;
-    background-color: map-get($map: colors, $key: footer);
+    background-color: map-get($colors, footer);
     border-top: $bor_negro;
     @include flexrow-centrado;
 }
@@ -88,7 +88,7 @@
         z-index: 9;
     }
     &:hover{
-        transform: translateY(300px);
+        transform: translateY(280px);
         transition: transform .25s;
     }
 }
@@ -106,7 +106,7 @@
 
 .galery__div{
     padding: $pad-normal;
-    background-color: map-get($map: colors, $key: card);
+    background-color: map-get($colors, card);
     border: $bor_card;
     border-radius: $rad_bor;
     @include flexcol-centrado-v;
@@ -146,7 +146,7 @@
     width: 100%;
     height: 400px;
     padding: $pad-normal;
-    background-color: map-get($map: colors, $key: card);
+    background-color: map-get($colors, card);
     border: $bor_card;
     border-radius: $rad_bor;
     overflow: hidden;
@@ -161,7 +161,7 @@
         padding: $pad-normal;
         border-radius: 20px;
         border-top: $bor_card;
-        background-color: map-get($map: colors, $key: card);
+        background-color: map-get($colors, card);
         text-align: justify;
         position: relative;
         left: 0;
@@ -244,7 +244,7 @@
     height: fit-content;
     transform: scale(0.8);
     padding: $pad-normal;
-    background-color: map-get($map: colors, $key: card);
+    background-color: map-get($colors, card);
     border-radius: $rad_bor;
     border: $bor_card;
     img{
@@ -280,7 +280,7 @@
     margin: 5%;
     padding: 16px;
     border: $bor_negro;
-    background-color: map-get($map: colors, $key: card);
+    background-color: map-get($colors, card);
 }
 
 #ayuda{
@@ -307,7 +307,7 @@
     border: $bor_negro;
     padding: $pad-normal;
     @include flexcol-centrado-h;
-    background-color: map-get($map: colors, $key: card);
+    background-color: map-get($colors, card);
     text-align: justify;
     h3{
         text-align: center;
