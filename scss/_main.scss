@@ -5,14 +5,13 @@
 
 #body{
     @include sizes100;
-    background-color: $c_fondo;
-}
+    background-color: map-get($map: colors, $key: fondo);
 
 #head{
     width: 100%;
     height: 80px;
     @include sticky-top;
-    background-color: $c_header;
+    background-color: map-get($map: colors, $key: header);
     border-bottom: $bor_negro;
 }
 
@@ -24,7 +23,7 @@
 #opciones__ul{
     width: 100%;
     border: $bor_negro;
-    background-color: $c_header;
+    background-color: map-get($map: colors, $key: header);
     display: flex;
     justify-content: right;
     padding-left: 10px;
@@ -43,7 +42,7 @@
 #footer{
     @include sizes100;
     padding: $pad-normal;
-    background-color: $c_footer;
+    background-color: map-get($map: colors, $key: footer);
     border-top: $bor_negro;
     @include flexrow-centrado;
 }
@@ -107,7 +106,7 @@
 
 .galery__div{
     padding: $pad-normal;
-    background-color: $c_card;
+    background-color: map-get($map: colors, $key: card);
     border: $bor_card;
     border-radius: $rad_bor;
     @include flexcol-centrado-v;
@@ -147,7 +146,7 @@
     width: 100%;
     height: 400px;
     padding: $pad-normal;
-    background-color: $c_card;
+    background-color: map-get($map: colors, $key: card);
     border: $bor_card;
     border-radius: $rad_bor;
     overflow: hidden;
@@ -162,7 +161,7 @@
         padding: $pad-normal;
         border-radius: 20px;
         border-top: $bor_card;
-        background-color: $c_card;
+        background-color: map-get($map: colors, $key: card);
         text-align: justify;
         position: relative;
         left: 0;
@@ -218,20 +217,26 @@
     @include sizes100;
     display: flex;
     flex-direction: column;
-    overflow: hidden
 }
 
 #link2{
-    @include sizes100;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden
+    @extend #link1;
+    #link2__img2{
+        height: 85%;
+        width: 95%;
+        margin-top: 3%;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        transition: opacity .5s;
+    }
+    &:hover #link2__img2{
+        opacity: 1;
+    }
 }
 
 #link3{
-    @include sizes100;
-    display: flex;
-    flex-direction: column;
+    @extend #link1;
 }
 
 .imglink{
@@ -239,7 +244,7 @@
     height: fit-content;
     transform: scale(0.8);
     padding: $pad-normal;
-    background-color: $c_card;
+    background-color: map-get($map: colors, $key: card);
     border-radius: $rad_bor;
     border: $bor_card;
     img{
@@ -275,7 +280,7 @@
     margin: 5%;
     padding: 16px;
     border: $bor_negro;
-    background-color: $c_card;
+    background-color: map-get($map: colors, $key: card);
 }
 
 #ayuda{
@@ -302,7 +307,7 @@
     border: $bor_negro;
     padding: $pad-normal;
     @include flexcol-centrado-h;
-    background-color: $c_card;
+    background-color: map-get($map: colors, $key: card);
     text-align: justify;
     h3{
         text-align: center;
@@ -349,11 +354,23 @@
 }
 
 @media screen and (min-width: 985px) and (max-width: 1485px){
-    #mapa{
-        grid-column-start: 2;
-    }
-    #link1{
-        grid-row-start: 2;
-        grid-column-start: 1;
-    }
+#mapa{
+    grid-column-start: 2;
+}
+
+#link1{
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+#link2{
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
+
+#link3{
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+}                                                         
 }

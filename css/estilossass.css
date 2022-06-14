@@ -212,25 +212,23 @@
   height: 100%;
   width: 100%; }
 
-#link1 {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden; }
-
-#link2 {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden; }
-
-#link3 {
+#link1, #link2, #link3 {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column; }
+
+#link2 #link2__img2 {
+  height: 85%;
+  width: 95%;
+  margin-top: 3%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: opacity .5s; }
+
+#link2:hover #link2__img2 {
+  opacity: 1; }
 
 .imglink {
   display: flex;
@@ -351,6 +349,12 @@
 @media screen and (min-width: 985px) and (max-width: 1485px) {
   #mapa {
     grid-column-start: 2; }
-  #link1 {
+  #link1, #link2, #link3 {
     grid-row-start: 2;
-    grid-column-start: 1; } }
+    grid-column-start: 1; }
+  #link2 {
+    grid-row-start: 3;
+    grid-column-start: 1; }
+  #link3 {
+    grid-row-start: 3;
+    grid-column-start: 2; } }
