@@ -1,0 +1,11 @@
+Para mejorar el SEO de la pagina:
+	-Agregue un titulo conciso a todas las páginas que ademas incluya el nombre de la galeria
+	-Agruegue una descripcion a cada página sobre la galeria y que hace cada seccion en particular
+	-Agregue keywords sobre el tema principal que trata la página para relacionarlo con busquedas cortas
+	-Estructura de directorios simple para facilitar la navegación
+	-Añadí un sitemap para los buscadores para que sepan organizar mejor la página y mostrarla en el orden correcto
+	-Diceño de navegacion a partir de la página de inicio para facilitar como los usuarios se desplazan a traves del contenido
+	-Hice un diseño responsive para que desde cualquier dispositivo el contenido se siga viendo ordenado y prolijo
+	-Redaccion consisa, facil de enteder, pero con una buena cantidad de informacion para que los usuarios entiendan el contenido
+	-Utilizacion de titulos (H1, H3, H5, etc) para comprender mejor el contenido
+	
